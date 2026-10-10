@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#262525">
+    <title>Gather — Find your next great moment</title>
+    <meta name="description" content="Discover events, reserve demo tickets, and make room for something memorable.">
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <a class="logo" href="#">gather<span>✳</span></a>
+        <nav aria-label="Main navigation">
+            <a href="#discover" class="active">Discover events</a>
+            <button id="history">My tickets <span id="ticket-count">0</span></button>
+        </nav>
+        <span class="edition">GOOD TIMES START HERE ↗</span>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow"><span class="live-dot"></span> GO OUT. TUNE IN. FEEL MORE.</p>
+                <h1>Life happens<br><em>when you’re there.</em></h1>
+                <p class="intro">Big nights. New discoveries. Your kind of people.<br>Find your next unforgettable
+                    moment.</p>
+                <a class="primary" href="#discover">Explore events <span>↗</span></a>
+                <div class="hero-bottom">
+                    <span>CURATED EXPERIENCES. REAL CONNECTIONS.</span>
+                    <span>01 / 06</span>
+                </div>
+            </div>
+            <div class="hero-art">
+                <div class="art-label">THE GATHER EDIT / OCTOBER 2026</div>
+                <div class="sun"></div>
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="poster-copy">AFTER<br>HOURS<span>LIVE MUSIC. OPEN SKIES.</span></div>
+                <div class="poster-bottom">SAT, OCT 24 · 6 PM <button data-event="1"
+                        aria-label="View After Hours Live">↗</button></div>
+            </div>
+        </section>
+        <section id="discover" class="discover">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">A LITTLE PLANNING. A LOT TO LOOK FORWARD TO.</p>
+                    <h2>Find your next thing<span>.</span></h2>
+                </div>
+                <p>Make your calendar a little more interesting.</p>
+            </div>
+            <div class="filters">
+                <label class="search"><span>⌕</span><input id="search" type="search"
+                        placeholder="Search events, places, or a new experience" aria-label="Search events"></label>
+                <label class="date-label">From <input id="date" type="date" aria-label="Events from date"></label>
+                <button class="reset" id="reset">Reset filters ↺</button>
+            </div>
+            <div class="category-row">
+                <div id="categories" role="group" aria-label="Event categories"></div>
+                <span id="result-count"></span>
+            </div>
+            <div id="events" class="grid"></div>
+            <p class="footnote">A demo made for discovering. All events and reservations are illustrative.</p>
+        </section>
+        <section class="closing">
+            <div>
+                <p class="eyebrow">LESS SCROLLING. MORE LIVING.</p>
+                <h2>Your next great story<br>starts with a ticket.</h2>
+            </div>
+            <a href="#discover">Find your moment ↗</a>
+        </section>
+    </main>
+    <footer>
+        <a class="logo" href="#">gather<span>✳</span></a>
+        <p>A little closer to the things you love.</p>
+        <span>© 2026 Gather · Demo experience</span>
+    </footer>
+    <dialog id="modal" aria-labelledby="modal-title">
+        <button id="close-modal" class="close" aria-label="Close dialog">×</button>
+        <div id="modal-body"></div>
+    </dialog>
+    <div id="notice" role="status"></div>
+</body>
+
+</html>
